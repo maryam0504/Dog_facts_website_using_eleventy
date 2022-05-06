@@ -2,10 +2,182 @@
 layout: base
 ---
 
-<div class="hero">
-    <h2>{{hero.title }}</h2>
+<div class="background">
+    <div>
+    <h1>{{ head_title.title }}</h1>
+    </div>
 </div>
 
-<div class="main-content">
-    {{ content }}
+
+<div class="background2">
+    <div>
+    <h3>{{ head_title.title2 }}</h3>
+    <h4>{{ head_title.title3 }}</h4>
+    <audio controls autoplay>
+  <source src="/assets/music/music.mp3" type="audio/mpeg">
+</audio>
+    </div>
 </div>
+
+
+<div class="container">
+    <div class="content_table">
+    <!--table of content-->
+    <h2>{{ table.title }}</h2>
+    <h4>{{ table.sub_title }}</h4>
+    <!--content list-->
+    <a href="#section1">{{ table.title1 }}</a>
+    <a href="#section2">{{ table.title2 }}</a>
+    <a href="#section3">{{ table.title3 }}</a>
+    <a href="#section4">{{ table.title4 }}</a>
+    <a href="#section5">{{ table.title5 }}</a>
+    <a href="#section6">{{ table.title6 }}</a>
+    <a href="#section7">{{ table.title7 }}</a>
+    <a href="#section8">{{ table.title8 }}</a>
+    <a href="#section9">{{ table.title9 }}</a>
+    <a href="#section10">{{ table.title10 }}</a>
+    <a href="#Gallary">{{ table.title11 }}</a>
+    </div>
+    
+    
+    <div>
+       
+        <h3>{{ facts.title }}</h3>
+        <img src="/assets/images/dog2.jpeg" alt="dog">
+    </div>
+    
+    <div id="section1">
+       <!--first fact-->
+        <h3>{{ facts.title1 }}</h3>
+        <p>{{ facts.content1 }}</p>
+    </div>
+    
+    <div id="section2">
+       <!--second fact-->
+        <h3>{{ facts.title2 }}</h3>
+        <p>{{ facts.content2 }}</p>
+    </div>
+    
+    <div id="section3">
+       <!--third fact-->
+        <h3>{{ facts.title3 }}</h3>
+        <img src="/assets/images/dog4.jpeg" alt="dog">
+        <p>{{ facts.content3 }}</p>
+    </div>
+    
+    
+    
+    <div id="section4">
+       <!--fourth fact-->
+        <h3>{{ facts.title4 }}</h3>
+        <p>{{ facts.content4 }}</p>
+    </div>
+    
+    
+    <div id="section5">
+       <!--fifth fact-->
+        <h3>{{ facts.title5 }}</h3>
+        <img src="/assets/images/dog5.jpeg" alt="dog">
+        <p>{{ facts.content5 }}</p>
+    </div>
+    
+    
+    
+    
+    <div id="section6">
+       <!--sixth fact-->
+        <h3>{{ facts.title6 }}</h3>
+        
+        <p>{{ facts.content6 }}</p>
+    </div>
+    
+    
+    
+    <div id="section7">
+      <!-- seventh fact-->
+        <h3>{{ facts.title7 }}</h3>
+        <img src="/assets/images/dog6.jpeg" alt="dog">
+        <p>{{ facts.content7 }}<p/>
+        <p>{{ facts.content7_2 }}</p>
+    </div>
+    
+    <div id="section8">
+       <!--eghith fact-->
+        <h3>{{ facts.title8 }}</h3>
+        <p>
+        {{ facts.content8 }}
+        <p/>
+    </div>
+    
+    
+    <div id="section9">
+       <!--ninth fact-->
+        <h3>{{ facts.title9 }}</h3>
+        <img src="/assets/images/dog7.jpeg" alt="dog">
+        <p>
+        {{ facts.content9 }}
+        <p/>
+        <p>{{ facts.content9_2 }}</p>
+    </div>
+    
+    
+    
+    <div id="section10">
+      <!-- tenth fact-->
+        <h3>{{ facts.title10 }}</h3>
+        <p>{{ facts.content10 }}
+        <p/>
+    </div>
+    
+    <h3 id="Gallary">{{ Gallary.title }}</h3>
+    
+    <div class="slideshow-container">
+
+<!--first slide-->
+<div class="mySlides fade">
+ <!--show slide number on top left of the picture-->
+  <div class="numbertext">{{ Gallary.number1 }}</div>
+  <img src="/assets/images/dog8.jpeg" class="width100" alt="dog">
+  <!--dog bred type -->
+  <div class="text">{{ Gallary.text1 }}</div>
+</div>
+
+<!--second slide-->
+<div class="mySlides fade">
+ <!--show slide number on top left of the picture-->
+  <div class="numbertext">{{ Gallary.number2 }}</div>
+  <img src="/assets/images/dog9.jpeg" class="width100" alt="dog">
+  <!--dog bred type -->
+  <div class="text">{{ Gallary.text2 }}</div>
+</div>
+
+
+<!--third slide-->
+<div class="mySlides fade">
+ <!--show slide number on top left of the picture-->
+  <div class="numbertext">{{ Gallary.number3 }}</div>
+  <img src="/assets/images/dog10.jpeg" class="width100" alt="dog">
+  <!--dog bred type -->
+  <div class="text">{{ Gallary.text3 }}</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+
+<div class="dots">
+ <!--dots show the total number of slides and indicate current slide-->
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    
+    
+</div>
+
+<script src="/assets/js/JavaScript.js"></script>
+
+
+ 

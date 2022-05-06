@@ -1,39 +1,52 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 16px;
     background-color: #f4f4f4;
     font-family: sans-serif;
+    
+        
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     /* shorthand for TOP RIGHT BOTTOM LEFT */
     /* margin: 1em 0 1.5em 0; */
 }
 
 h2 {
-    font-size: 1.6em;
+    font-size: 2em;
 }
 
 h3 {
-    font-size: 1.4em;
+    font-size: 1.75em;
+}
+h4{
+    font-size: 1.5em;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 1.5em;
     margin-bottom: 1.5em;
 }
 
 .inner-wrapper {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
 header,
 footer {
-    background-color: #777999;
+    background-color: black;
     padding: 2em 0;
+    color:white;
+    padding-left: 3%;
 }
+
+
 
 .hero {
     text-align: center;
@@ -49,8 +62,275 @@ footer {
 
 }
 
+.background{
+    background-image: url(/assets/images/dog.jpeg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding-top: 19%;
+}
+
+.background h1{
+    color: white;
+    
+}
+
+.background div{
+    display: flex;
+    margin-left: 3%;
+    
+}
+
+.background2{
+    background-image: url(/assets/images/dog3.png);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.background2 h3{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.background2 div{
+    display: block;
+    margin-left: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.background2 h4{
+    display: block;
+   margin-top: 2%;
+    margin-bottom: 2%;
+    
+    
+}
+
+.container{
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+    display: block;
+    justify-content: center;
+    padding-right: 8%;
+    padding-left: 8%;
+    
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
+.container div img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+
+.container h3{
+    font-weight: bold;
+    margin-bottom: 4%;
+    margin-top: 2%;
+    
+}
+.container h4{
+    font-weight: bold;
+    margin-bottom: 2%;
+    
+    
+}
+
+.container h2{
+    font-weight: bold;
+    margin-bottom: 4%;
+    margin-top: 2%;
+    
+}
+
+
+.container p{
+    margin-left: 5%;
+}
+
+.container div a{
+    
+    display: block;
+    text-decoration: none;
+    color: black;
+    line-height: 1.5em;
+    
+}
+
+
+.content_table{
+    
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3%;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 5%;
+    
+}
+.content_table a{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 main {
     margin-bottom: 2em;
 }
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+    
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.dots{
+    text-align:center;
+    margin-bottom: 5%;
+        
+}
+
+.width100{
+    width: 100%;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+    
+    .background{
+    background-image: url(/assets/images/dog.jpeg);
+    background-repeat: no-repeat;
+        background-size:cover;
+    
+    padding-top: 23%;
+        padding-right: 42%
+}
+    header{
+    text-align: center;
+}
+    
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .background{
+    background-image: url(/assets/images/dog.jpeg);
+    background-repeat: no-repeat;
+        background-size:cover;
+    
+    padding-top: 15%;
+        padding-right: 4%
+}
+    .background h1{
+    
+    
+        padding-right: 4%
+}
+    header{
+    text-align: center;
+}
+    
+    
+}
+
+
+
+

@@ -1,28 +1,22 @@
-# 11056-project2
+# Dog facts website
 
-## 11056 Project 2 Starter
+## Introduction
 
-This is repo containing everything you need to start Project 2. All you need to do is clone this repository to your computer and start editing...
+TOn this page, I designed and wrote a variety of facts about dogs and presented them in a responsive arrangement with various smart devices.
 
-Make sure you refer to Canvas for more info.
+## Approach
+In general, I designed the page as a reading journey for the user. This journey relies on the auditory, visual and interactive senses.
 
-## Install Elventy
-From Terminal, navigate to the folder you saved the repository in:
+From the audio point of view, I have incorporated a clip of relaxing music that the user can play while reading the article.
 
-Type `npm create`
+Visually, I kept the contrast high for easier reading and added a lot of pictures.
 
-or, if that doesn't work: `npm install --save-dev @11ty/eleventy`
+From the interactive side, I used an interactive table of content. When you click on the title you want to go to, the scroll moves to those points easily. I also added a slide show that the user can interact with.
 
-## Test your site
 
-Open Terminal and type: `npm start`
+## Website advantages
 
-This will create a local server to test the website.
-
-Go to: http://localhost:8080 to view your site
-
-## Build the site
-
-Run `npm build`
-
-Open up your site folder and you'll discover a folder within it called `final-website` this is where your actual site files are located. 
+Responsiveness to smart devices.
+High contrast supports accessibility.
+The content is interactive with the user (interactive scrolls from the table of content menu and slideshow).
+Treat the user as if they are on a journey through the content.
